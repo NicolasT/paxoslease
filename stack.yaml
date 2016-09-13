@@ -1,5 +1,7 @@
 resolver: lts-6.15
 packages:
+- paxoslease
 - indexed-prelude
 extra-deps:
 - indexed-0.1
+- indexed-extras-0.2
