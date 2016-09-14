@@ -1,0 +1,36 @@
+Name:           paxoslease-interactive
+Version:        0.0.0.1
+Synopsis:       An interactive demo of PaxosLease
+Homepage:       https://github.com/NicolasT/paxoslease
+License:        BSD3
+License-File:   LICENSE
+Author:         Nicolas Trangez
+Maintainer:     ikke@nicolast.be
+Copyright:      (c) 2016, Nicolas Trangez
+Category:       Network
+Build-Type:     Simple
+Cabal-Version:  >=1.10
+
+Executable paxoslease-interactive-acceptor
+  Hs-Source-Dirs:       src
+  Main-Is:              paxoslease-interactive-acceptor.hs
+  Other-Modules:        Lib
+  Build-Depends:        base >= 4.8 && < 4.9
+                      , free >= 4.12 && < 4.13
+                      , paxoslease == 0.0.0.1
+  Default-Language:     Haskell2010
+
+Executable paxoslease-interactive-proposer
+  Hs-Source-Dirs:       src
+  Main-Is:              paxoslease-interactive-proposer.hs
+  Other-Modules:        Lib
+  Build-Depends:        base >= 4.8 && < 4.9
+                      , free >= 4.12 && < 4.13
+                      , transformers >= 0.4 && < 0.5
+                      , paxoslease == 0.0.0.1
+  Default-Language:     Haskell2010
+
+Source-Repository head
+  Type:         git
+  Location:     https://github.com/NicolasT/paxoslease
+  Subdir:       paxoslease-interactive
